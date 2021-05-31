@@ -1,0 +1,117 @@
+body {
+    max-width: 375px;
+    margin: 20px auto;
+    }
+    .card {
+        padding: 1rem 2rem 1rem 2rem; /*Top Right Bottom Left*/
+    }
+    
+    /*Cards styling*/
+    #cardContainer {
+        border-radius: 1rem;
+        overflow: hidden;
+    }
+    #sedanCard {
+        background-color: hsl(31, 77%, 52%);
+    }
+    #suvCard {
+        background-color: hsl(184, 100%, 22%);
+    }
+    #luxuryCard {
+        background-color: hsl(179, 100%, 13%);
+    }
+    
+    /*Text styling*/
+    h1 {
+        font-family: 'Big Shoulders Display', cursive;
+        font-size: 2rem;
+        font-weight: 700;
+        color: hsl(0, 0%, 95%);
+    }
+    p, .attribution {
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 0.8rem;
+        font-weight: 400;
+        line-height: 1.5em;
+        color: hsla(0, 0%, 100%, 0.75);
+    }
+    .button {
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 0.8rem;
+        font-weight: 400;
+        text-align: center;
+        color: hsl(0, 0%, 95%);
+        background-color: white;
+        padding: 0.8em;
+        max-width: 100px;
+        border-radius: 1.5em;
+        border: 2px solid white;
+    }
+    .button:hover {
+        background-color: transparent;
+    }
+    #sedanCard .button:hover {
+        color: hsl(0, 0%, 95%);
+    }
+    #suvCard .button:hover {
+        color: hsl(0, 0%, 95%);
+    }
+    #luxuryCard .button:hover {
+        color: hsl(0, 0%, 95%);
+    }
+    #sedanCard .button {
+        color: hsl(31, 77%, 52%);
+    }
+    #suvCard .button {
+        color: hsl(184, 100%, 22%);
+    }
+    #luxuryCard .button {
+        color: hsl(179, 100%, 13%);
+    }
+    .imageIcon {
+        max-width: 80px;
+    }
+    
+
+    @media screen and (max-width: 400px) {
+        body {
+            margin: 10%;
+        }
+        
+    }
+    @media screen and (min-width: 1000px) {
+        body {
+            display: flex;
+            flex-direction: column;
+            max-width: 1440px;
+            margin: 100px auto;
+        }
+        #cardContainer {
+            display: flex;
+            flex-direction: row;
+            height: 80vh;
+            max-height: 500px;
+            margin: auto;
+        }
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 5%;
+            width: 30%;
+            max-width: 300px;
+        }
+        p {
+            height: 50%;
+        }
+    }
+
+    /*Challenge reference section*/
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: hsl(0, 0%, 55%);
+    }
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
